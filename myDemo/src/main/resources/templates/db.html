@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http:thymeleaf.org">
+<head>
+	<title>Small Body Database</title>
+	<meta http-equiv="Content-Type" content="text/html, charset=UTF-8"/>
+	<!-- 
+	<link rel="stylesheet" type="text/css" href="../static/jquery-easyui-1.5.4.1/themes/default/easyui.css" th:href="@{jquery-easyui-1.5.4.1/themes/default/easyui.css}"  />
+    <link rel="stylesheet" type="text/css" href="../static/jquery-easyui-1.5.4.1/themes/icon.css" th:href="@{jquery-easyui-1.5.4.1/themes/icon.css}" />
+    <link rel="stylesheet" type="text/css" href="../static/jquery-easyui-1.5.4.1/themes/color.css" th:href="@{jquery-easyui-1.5.4.1/themes/color.css}" />
+    <link rel="stylesheet" type="text/css" href="../static/jquery-easyui-portal/portal.css" th:href="@{jquery-easyui-portal/portal.css}" />
+    <script type="text/javascript" src="../static/jquery-easyui-1.5.4.1/jquery.min.js" th:src="@{jquery-easyui-1.5.4.1/jquery.min.js}"></script>
+    <script type="text/javascript" src="../static/jquery-easyui-1.5.4.1/jquery.easyui.min.js" th:src="@{jquery-easyui-1.5.4.1/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" src="../static/jquery-easyui-portal/jquery.portal.js" th:src="@{jquery-easyui-portal/jquery.portal.js}"></script>
+     -->
+    <link rel="stylesheet" type="text/css" th:href="@{jquery-easyui-1.5.4.1/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{jquery-easyui-1.5.4.1/themes/icon.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{jquery-easyui-1.5.4.1/themes/color.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{jquery-easyui-portal/portal.css}" />
+    <script type="text/javascript" th:src="@{jquery-easyui-1.5.4.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{jquery-easyui-1.5.4.1/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{jquery-easyui-portal/jquery.portal.js}"></script>
+    
+    
+    <script th:inline="javascript">
+		$(function(){
+			$('#pp').portal({
+				border:false,
+			});
+			var tempIndex = [[${keyword}]];
+			var basicUrl = "/myDemo/queryBasic?keyword="+tempIndex;
+			$.get(basicUrl,function(basicInfo){
+				$('#p_basic').text("小行星 ("+basicInfo.num+"  "+basicInfo.name+")  基本信息");
+				$('#p_basic_info').text("编号: "+basicInfo.num+"；              名称: "+basicInfo.name+"；             序号: "+basicInfo.serialNum+"；            类别: "+basicInfo.className+"；            spk_id: "+basicInfo.spk_id);
+			});
+			
+			var oeUrl = "/myDemo/queryOE?keyword="+tempIndex;
+			var odpUrl = "/myDemo/queryODP?keyword="+tempIndex;
+			var ppUrl = "/myDemo/queryPP?keyword="+tempIndex;
+			$('#p_oe_grid').datagrid('options').url=oeUrl;
+			$('#p_oe_grid').datagrid('reload');
+			$('#p_odp_grid').datagrid('options').url=odpUrl;
+			$('#p_odp_grid').datagrid('reload');
+			$('#p_pp_grid').datagrid('options').url=ppUrl;
+			$('#p_pp_grid').datagrid('reload');
+		});
+	</script>
+	<script>
+        	function doSearch(value){
+        		window.location.href = "/myDemo/search?keyword="+value;
+        	}
+    	</script>
+</head>
+<body>
+	<div class="title" style="background:#0000FF;height:60px"></div>
+    <div id="p_search" title="Searching" style="padding:30px 20%;">
+		<p th:text="欢迎使用起源太空小行星检索引擎！" style="text-align:center"/>
+		<input class="easyui-searchbox" data-options="prompt:'Please Input No. or Name',searcher:doSearch" style="width:100%;text-align:center"></input>
+	</div>
+	<div id="p_basic" class="title" style="text-align:center;background:#99bbff;height:60px;line-height:60px"></div>
+		<div id="p_basic_info" style="text-align:center;background:#99bbff;height:60px;line-height:60px"></div>
+    <div id="pp">
+		<div id="p_oe" style="width:50%;height:400px">
+			<table id="p_oe_grid" class="easyui-datagrid" title="Orbital Elements" style="width:100%;height:auto"
+				data-options="url:'',method:'get'">
+				<thead>
+            			<tr>
+                			<th field="elementName" width="20%">Element</th>
+                			<th field="value" width="30%">Value</th>
+                			<th field="uncertainly" width="35%">Uncertainly(1-sigma)</th>
+                			<th field="unit" width="15%" align="right">Units</th>
+            			</tr>
+        			</thead>
+			</table>
+		</div>
+        	<div id="p_odp" style="width:50%;height:400px">
+			<table id="p_odp_grid" class="easyui-datagrid" title="Orbit Determination Parameter" style="width:100%;height:auto"
+				data-options="url:'',method:'get'">
+				<thead>
+					<tr>
+						<th field="name" width="40%"></th>
+						<th field="value" width="20%"></th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+    </div>
+    
+    <div id="p_pp" style="height:400px">
+		<table id="p_pp_grid" class="easyui-datagrid" title="Physical Parameters" style="width:100%;height:auto"
+			data-options="fit:true,collapsible:true,singleSelect:true,url:'',method:'get'">
+			<thead>
+				<tr>
+					<th field="name" width="14%">Parameter</th>
+					<th field="symbol" width="5%">Symbol</th>
+					<th field="value" width="8%">Value</th>
+					<th field="unit" width="8%">Units</th>
+					<th field="sigma" width="5%">Sigma</th>
+					<th field="reference" width="25%">Reference</th>
+					<th field="note" width="35%">Notes</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+    
+    <p>
+    <a href="../index.html" th:href="@{/}" style="text-align:center">返回首页</a>
+	</p>
+	
+</body>
+</html>

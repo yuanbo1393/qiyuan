@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http:thymeleaf.org">
+<head>
+	<title>My DB Demo!</title>
+	<meta http-equiv="Content-Type" content="text/html,charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.4.1/themes/default/easyui.css" th:href="@{jquery-easyui-1.5.4.1/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.4.1/themes/icon.css" th:href="@{jquery-easyui-1.5.4.1/themes/icon.css}" />
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.4.1/themes/color.css" th:href="@{jquery-easyui-1.5.4.1/themes/color.css}" />
+    <script type="text/javascript" src="jquery-easyui-1.5.4.1/jquery.min.js" th:src="@{jquery-easyui-1.5.4.1/jquery.min.js}"></script>
+    <script type="text/javascript" src="jquery-easyui-1.5.4.1/jquery.easyui.min.js" th:src="@{jquery-easyui-1.5.4.1/jquery.easyui.min.js}"></script>
+
+    <script>
+        function doSearch(value){
+           window.location.href = "/myDemo/search?keyword="+value;
+        }
+    </script>
+</head>
+<body>
+	<div class="title" style="background:#0000FF;height:60px"></div>
+    <div id="p_search" title="Searching" style="padding:30px 20%">
+		<p style="text-align:center;height:60px">欢迎使用起源太空小行星检索引擎！</p>
+		<input class="easyui-searchbox" data-options="prompt:'Please Input No. or Name',searcher:doSearch" style="width:100%;text-align:center"></input>
+	</div>
+</body>
+</html>
