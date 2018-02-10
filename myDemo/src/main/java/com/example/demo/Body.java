@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
+
 import java.sql.Date;
 
 @Entity
@@ -138,6 +140,7 @@ public class Body{
 	private String rp_unit;		//rotation period Unit
 	private Double rp_sigma;		//rotation period Sigma
 	private String rp_reference;	//rotation period Reference
+	@Lob
 	private String rp_note;		//rotation period Note
 	
 	//geometric albedo

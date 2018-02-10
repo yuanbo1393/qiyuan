@@ -194,7 +194,21 @@ public class DataImporter{
 		ppRP.setReference("LCDB (Rev. 2017-April); Warner et al., 2009");
 		ppRP.setNote("Published Reference List:\n" + 
 				"[Campa, M. (1938) Mem. Soc. Astron. Ital. 11, 285-301.]\n" + 
-				"[Beyer, M. (1953) Astron. Nachr. 281, 121-130.]");
+				"[Beyer, M. (1953) Astron. Nachr. 281, 121-130.]\n"+
+				"[Cailliate, C. (1956) Publ. Observ. Lyon 3, fasc. 28.]\n" + 
+				"[Cristescu, C. (1976) Icarus 28, 39-42.]\n" +
+				"[Dunlap, J.L. (1976) Icarus 28, 69-78.]\n" + 
+				"[Millis, R.L.; Bowell, E.; Thompson, D.T. (1976) Icarus 28, 53-67.]\n" + 
+				"[Scaltriti, F.; Zappala, V. (1976) Icarus 28, 29-35.]\n" + 
+				"[Taylor, R.C. (1985) Icarus 61, 3, 490-496.]\n" + 
+				"[Hicks, M.; Buratti, B.J.; Rabinowitz, D.L.; Genevier, G. (1999) Icarus 141, 411-414.]\n" + 
+				"[Yeomans, D.K.; Antreasian, P.G.; Bariiot, J.-P.; Chesley, S.R.; et al. (2000) Science 289, 2085-2087.]\n" + 
+				"[Kaasalainen, M.; Torppa, J.; Muinonen, K. (2001) Icarus 153, 37-51.]\n" + 
+				"[Miller, J.K.; Konopliv, A.S.; Antreasian, P.G.; Bordi, J.J.; et al. (2002) Icarus 155, 3-17.]\n" + 
+				"[Wolters, S.D.; Green, S.F.; McBride, N.; Davies, J.K. (2008) Icarus 193, 535-552.]\n" + 
+				"[Behrend, R. (2009) Observatoire de Geneve web site, http://obswww.unige.ch/~behrend/page_cou.html]\n" + 
+				"[Koehn, B.W.; Bowell, E.L.G.; Skiff, B.A.; Sanborn, J.J.; et al. (2014) Minor Planet Bul. 41, 286-300.]\n" + 
+				"[Warner, B.D. (2017) Minor Planet Bul. 44, 22-36.]");
 		temp.setPP(ppRP);
 		
 		PhysicalParameter ppGA = new PhysicalParameter();
