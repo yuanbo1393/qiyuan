@@ -19,7 +19,7 @@ public class DataImporter{
 		temp.setSerialNum("1898 DQ");
 		temp.setClassification(Classification.Amor);
 		temp.setSpk_id(2000433);
-		
+		/*
 		//轨道信息
 		OrbitalElement oeE = new OrbitalElement();
 		oeE.setElement(Element.E);
@@ -115,13 +115,13 @@ public class DataImporter{
 		Date dLast = Date.valueOf("2017-06-04");
 		temp.setLast_obs_used(dLast);
 		temp.setPlanetary_ephem("DE431");
-		temp.setSB_pert_ephem("SB431-N16");
+		temp.setSb_pert_ephem("SB431-N16");
 		temp.setCondition_code(0);
 		temp.setFit_RMS(0.36235);
 		temp.setData_source("ORB");
 		temp.setProducer("Otto Matic");
 		Date dSolution = Date.valueOf("2017-06-06");
-		temp.setSolution_data(dSolution);
+		temp.setSolution_date(dSolution);
 		
 		
 		//物理参数
@@ -262,5 +262,6 @@ public class DataImporter{
 		temp.setPP(ppSST);
 		
 		bodyRepository.save(temp);
+		*/
 	}
 }

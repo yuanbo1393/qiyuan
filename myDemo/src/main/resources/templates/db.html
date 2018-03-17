@@ -27,8 +27,8 @@
 			var tempIndex = [[${keyword}]];
 			var basicUrl = "/myDemo/queryBasic?keyword="+tempIndex;
 			$.get(basicUrl,function(basicInfo){
-				$('#p_basic_title').text("小行星 ("+basicInfo.num+"  "+basicInfo.name+")  基本信息");
-				$('#p_basic_info').text("编号: "+basicInfo.num+"；              名称: "+basicInfo.name+"；             序号: "+basicInfo.serialNum+"；            类别: "+basicInfo.className+"；            spk_id: "+basicInfo.spk_id);
+				$('#p_basic_title').text("小行星 ("+basicInfo.num+" "+basicInfo.name+")  基本信息");
+				$('#p_basic_info').text("编号: "+basicInfo.num+" 名称: "+basicInfo.name+" 序号: "+basicInfo.serialNum+" 类别: "+basicInfo.className+" spk_id: "+basicInfo.spk_id);
 			});
 			
 			var oeUrl = "/myDemo/queryOE?keyword="+tempIndex;
