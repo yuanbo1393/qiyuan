@@ -32,73 +32,73 @@ public class Body{
 	private double oe_e_v;		//e value
 	@Column(columnDefinition="double default 0")
 	private double oe_e_unc;		//e uncertainly
-	//private String oe_e_unit;	//e unit
+	
 	//Element a
 	@Column(columnDefinition="double default 0")
 	private double oe_a_v;		//a value
 	@Column(columnDefinition="double default 0")
 	private double oe_a_unc;		//a uncertainly
-	//private String oe_a_unit;	//a unit
+	
 	//Element q
 	@Column(columnDefinition="double default 0")
 	private double oe_q_v;		//q value
 	@Column(columnDefinition="double default 0")
 	private double oe_q_unc;		//q uncertainly
-	//private String oe_q_unit;	//q unit
+	
 	//Element i
 	@Column(columnDefinition="double default 0")
 	private double oe_i_v;		//i value
 	@Column(columnDefinition="double default 0")
 	private double oe_i_unc;		//i uncertainly
-	//private String oe_i_unit;	//i unit
+	
 	//Element node
 	@Column(columnDefinition="double default 0")
 	private double oe_node_v;		//node value
 	@Column(columnDefinition="double default 0")
 	private double oe_node_unc;		//node uncertainly
-	//private String oe_node_unit;		//node unit
+	
 	//Element peri
 	@Column(columnDefinition="double default 0")
 	private double oe_peri_v;		//peri value
 	@Column(columnDefinition="double default 0")
 	private double oe_peri_unc;		//peri uncertainly
-	//private String oe_peri_unit;		//peri unit
+	
 	//Element mUpper
 	@Column(columnDefinition="double default 0")
 	private double oe_mUpper_v;		//M value
 	@Column(columnDefinition="double default 0")
 	private double oe_mUpper_unc;	//M uncertainly
-	//private String oe_mUpper_unit;	//M unit
+	
 	//Element tp
 	@Column(columnDefinition="double default 0")
 	private double oe_tp_v;		//Tp value
 	@Column(columnDefinition="double default 0")
 	private double oe_tp_unc;	//Tp uncertainly
-	//private String oe_tp_unit;	//Tp unit
+	
 	//Element periodByDay
 	@Column(columnDefinition="double default 0")
 	private double oe_periodByDay_v;		//period(days) value
 	@Column(columnDefinition="double default 0")
 	private double oe_periodByDay_unc;	//period(days) uncertainly
-	//private String oe_periodByDay_unit;	//period(days) unit
+	
 	//Element periodByYr
 	@Column(columnDefinition="double default 0")
 	private double oe_periodByYr_v;		//period(years) value
 	@Column(columnDefinition="double default 0")
 	private double oe_periodByYr_unc;	//period(years) uncertainly
-	//private String oe_periodByYr_unit;	//period(years) unit
+	
 	//Element n
 	@Column(columnDefinition="double default 0")
 	private double oe_n_v;		//n value
 	@Column(columnDefinition="double default 0")
 	private double oe_n_unc;		//n uncertainly
-	//private String oe_n_unit;	//n unit
+	
 	//Element qUpper
 	@Column(columnDefinition="double default 0")
 	private double oe_qUpper_v;		//Q value
 	@Column(columnDefinition="double default 0")
 	private double oe_qUpper_unc;	//Q uncertainly
-	//private String oe_qUpper_unit;	//Q unit
+	
 	
 	//轨道参数Orbit Determination Parameters
 	private Integer total_obs_used;
@@ -119,21 +119,18 @@ public class Body{
 	//absolute magnitude
 	private String am_symbol;	//absolute magnitude Symbol
 	private Double am_value;		//absolute magnitude Value
-	//private String am_unit;		//absolute magnitude Unit
 	private Double am_sigma;		//absolute magnitude Sigma
 	private String am_reference;	//absolute magnitude Reference
 	private String am_note;		//absolute magnitude Note
 	//magnitude slope
 	private String ms_symbol;	//magnitude slope Symbol
 	private Double ms_value;		//magnitude slope Value
-	//private String ms_unit;		//magnitude slope Unit
 	private Double ms_sigma;		//magnitude slope Sigma
 	private String ms_reference;	//magnitude slope Reference
 	private String ms_note;		//magnitude slope Note
 	//diameter
 	private String diameter_symbol;		//diameter Symbol
 	private Double diameter_value;		//diameter Value
-	//private String diameter_unit;		//diameter Unit
 	private Double diameter_sigma;		//diameter Sigma
 	private String diameter_reference;	//diameter Reference
 	private String diameter_note;		//diameter Note
@@ -142,7 +139,6 @@ public class Body{
 	private Double extent_value_l;	//extent Value L
 	private Double extent_value_w;	//extent Value W
 	private Double extent_value_h;	//extent Value H
-	//private String extent_unit;		//extent Unit
 	private Double extent_sigma;		//extent Sigma
 	private String extent_reference;	//extent Reference
 	private String extent_note;		//extent Note
@@ -150,7 +146,6 @@ public class Body{
 	//gm
 	private String gm_symbol;	//gm Symbol
 	private Double gm_value;		//gm Value
-	//private String gm_unit;		//gm Unit
 	private Double gm_sigma;		//gm Sigma
 	private String gm_reference;	//gm Reference
 	private String gm_note;		//gm Note
@@ -158,7 +153,6 @@ public class Body{
 	//bulk density
 	private String bd_symbol;	//bulk density Symbol
 	private Double bd_value;		//bulk density Value
-	//private String bd_unit;		//bulk density Unit
 	private Double bd_sigma;		//bulk density Sigma
 	private String bd_reference;	//bulk density Reference
 	private String bd_note;		//bulk density Note
@@ -166,7 +160,6 @@ public class Body{
 	//rotation period
 	private String rp_symbol;	//rotation period Symbol
 	private Double rp_value;		//rotation period Value
-	//private String rp_unit;		//rotation period Unit
 	private Double rp_sigma;		//rotation period Sigma
 	private String rp_reference;	//rotation period Reference
 	@Lob
@@ -175,7 +168,6 @@ public class Body{
 	//geometric albedo
 	private String ga_symbol;	//geometric albedo Symbol
 	private Double ga_value;		//geometric albedo Value
-	//private String ga_unit;		//geometric albedo Unit
 	private Double ga_sigma;		//geometric albedo Sigma
 	private String ga_reference;	//geometric albedo Reference
 	private String ga_note;		//geometric albedo Note
@@ -183,7 +175,6 @@ public class Body{
 	//B-V
 	private String bv_symbol;	//B-V Symbol
 	private Double bv_value;		//B-V Value
-	//private String bv_unit;		//B-V Unit
 	private Double bv_sigma;		//B-V Sigma
 	private String bv_reference;	//B-V Reference
 	private String bv_note;		//B-V Note
@@ -191,7 +182,6 @@ public class Body{
 	//U-B
 	private String ub_symbol;	//U-B Symbol
 	private Double ub_value;		//U-B Value
-	//private String ub_unit;		//U-B Unit
 	private Double ub_sigma;		//U-B Sigma
 	private String ub_reference;	//U-B Reference
 	private String ub_note;		//U-B Note
@@ -199,7 +189,6 @@ public class Body{
 	//Tholen spectral type
 	private String tst_symbol;	//Tholen spectral type Symbol
 	private String tst_value;	//Tholen spectral type Value
-	//private String tst_unit;		//Tholen spectral type Unit
 	private Double tst_sigma;	//Tholen spectral type Sigma
 	private String tst_reference;//Tholen spectral type Reference
 	private String tst_note;		//Tholen spectral type Note
@@ -207,7 +196,6 @@ public class Body{
 	//SMASSII spectral type
 	private String sst_symbol;	//SMASSII spectral type Symbol
 	private String sst_value;	//SMASSII spectral type Value
-	//private String sst_unit;		//SMASSII spectral type Unit
 	private Double sst_sigma;	//SMASSII spectral type Sigma
 	private String sst_reference;//SMASSII spectral type Reference
 	private String sst_note;		//SMASSII spectral type Note
@@ -278,14 +266,7 @@ public class Body{
 	public void setOe_e_unc(double oe_e_unc) {
 		this.oe_e_unc = oe_e_unc;
 	}
-	/*
-	public String getOe_e_unit() {
-		return oe_e_unit;
-	}
-	public void setOe_e_unit(String oe_e_unit) {
-		this.oe_e_unit = oe_e_unit;
-	}
-	*/
+
 	//Element a
 	public double getOe_a_v() {
 		return oe_a_v;
@@ -300,14 +281,7 @@ public class Body{
 	public void setOe_a_unc(double oe_a_unc) {
 		this.oe_a_unc = oe_a_unc;
 	}
-	/*
-	public String getOe_a_unit() {
-		return oe_a_unit;
-	}
-	public void setOe_a_unit(String oe_a_unit) {
-		this.oe_a_unit = oe_a_unit;
-	}
-	*/
+
 	//Element q
 	public double getOe_q_v() {
 		return oe_q_v;
@@ -322,14 +296,7 @@ public class Body{
 	public void setOe_q_unc(double oe_q_unc) {
 		this.oe_q_unc = oe_q_unc;
 	}
-	/*
-	public String getOe_q_unit() {
-		return oe_q_unit;
-	}
-	public void setOe_q_unit(String oe_q_unit) {
-		this.oe_q_unit = oe_q_unit;
-	}
-	*/
+
 	//Element i
 	public double getOe_i_v() {
 		return oe_i_v;
@@ -344,14 +311,7 @@ public class Body{
 	public void setOe_i_unc(double oe_i_unc) {
 		this.oe_i_unc = oe_i_unc;
 	}
-	/*
-	public String getOe_i_unit() {
-		return oe_i_unit;
-	}
-	public void setOe_i_unit(String oe_i_unit) {
-		this.oe_i_unit = oe_i_unit;
-	}
-	*/
+
 	//Element node
 	public double getOe_node_v() {
 		return oe_node_v;
@@ -366,14 +326,7 @@ public class Body{
 	public void setOe_node_unc(double oe_node_unc) {
 		this.oe_node_unc = oe_node_unc;
 	}
-	/*
-	public String getOe_node_unit() {
-		return oe_node_unit;
-	}
-	public void setOe_node_unit(String oe_node_unit) {
-		this.oe_node_unit = oe_node_unit;
-	}
-	*/
+
 	//Element peri
 	public double getOe_peri_v() {
 		return oe_peri_v;
@@ -388,14 +341,7 @@ public class Body{
 	public void setOe_peri_unc(double oe_peri_unc) {
 		this.oe_peri_unc = oe_peri_unc;
 	}
-	/*
-	public String getOe_peri_unit() {
-		return oe_peri_unit;
-	}
-	public void setOe_peri_unit(String oe_peri_unit) {
-		this.oe_peri_unit = oe_peri_unit;
-	}
-	*/
+
 	//Element mUpper
 	public double getOe_mUpper_v() {
 		return oe_mUpper_v;
@@ -410,14 +356,7 @@ public class Body{
 	public void setOe_mUpper_unc(double oe_mUpper_unc) {
 		this.oe_mUpper_unc = oe_mUpper_unc;
 	}
-	/*
-	public String getOe_mUpper_unit() {
-		return oe_mUpper_unit;
-	}
-	public void setOe_mUpper_unit(String oe_mUpper_unit) {
-		this.oe_mUpper_unit = oe_mUpper_unit;
-	}
-	*/
+
 	//Element tp
 	public double getOe_tp_v() {
 		return oe_tp_v;
@@ -432,14 +371,7 @@ public class Body{
 	public void setOe_tp_unc(double oe_tp_unc) {
 		this.oe_tp_unc = oe_tp_unc;
 	}
-	/*
-	public String getOe_tp_unit() {
-		return oe_tp_unit;
-	}
-	public void setOe_tp_unit(String oe_tp_unit) {
-		this.oe_tp_unit = oe_tp_unit;
-	}
-	*/
+
 	//Element periodByDay
 	public double getOe_periodByDay_v() {
 		return oe_periodByDay_v;
@@ -454,14 +386,7 @@ public class Body{
 	public void setOe_periodByDay_unc(double oe_periodByDay_unc) {
 		this.oe_periodByDay_unc = oe_periodByDay_unc;
 	}
-	/*
-	public String getOe_periodByDay_unit() {
-		return oe_periodByDay_unit;
-	}
-	public void setOe_periodByDay_unit(String oe_periodByDay_unit) {
-		this.oe_periodByDay_unit = oe_periodByDay_unit;
-	}
-	*/
+
 	//Element periodByYr
 	public double getOe_periodByYr_v() {
 		return oe_periodByYr_v;
@@ -476,14 +401,7 @@ public class Body{
 	public void setOe_periodByYr_unc(double oe_periodByYr_unc) {
 		this.oe_periodByYr_unc = oe_periodByYr_unc;
 	}
-	/*
-	public String getOe_periodByYr_unit() {
-		return oe_periodByYr_unit;
-	}
-	public void setOe_periodByYr_unit(String oe_periodByYr_unit) {
-		this.oe_periodByYr_unit = oe_periodByYr_unit;
-	}
-	*/
+
 	//Element n
 	public double getOe_n_v() {
 		return oe_n_v;
@@ -498,14 +416,7 @@ public class Body{
 	public void setOe_n_unc(double oe_n_unc) {
 		this.oe_n_unc = oe_n_unc;
 	}
-	/*	
-	public String getOe_n_unit() {
-		return oe_n_unit;
-	}
-	public void setOe_n_unit(String oe_n_unit) {
-		this.oe_n_unit = oe_n_unit;
-	}
-	*/
+
 	//Element qUpper
 	public double getOe_qUpper_v() {
 		return oe_qUpper_v;
@@ -520,14 +431,7 @@ public class Body{
 	public void setOe_qUpper_unc(double oe_qUpper_unc) {
 		this.oe_qUpper_unc = oe_qUpper_unc;
 	}
-	/*
-	public String getOe_qUpper_unit() {
-		return oe_qUpper_unit;
-	}
-	public void setOe_qUpper_unit(String oe_qUpper_unit) {
-		this.oe_qUpper_unit = oe_qUpper_unit;
-	}
-	*/
+
 	//轨道参数Orbit Determination Parameters
 	public Integer getTotal_obs_used() {
 		return total_obs_used;
@@ -635,14 +539,7 @@ public class Body{
 	public void setAm_value(Double am_value) {
 		this.am_value = am_value;
 	}
-	/*	
-	public String getAm_unit() {
-		return am_unit;
-	}
-	public void setAm_unit(String am_unit) {
-		this.am_unit = am_unit;
-	}
-	*/
+
 	public Double getAm_sigma() {
 		return am_sigma;
 	}
@@ -678,14 +575,7 @@ public class Body{
 	public void setMs_value(Double ms_value) {
 		this.ms_value = ms_value;
 	}
-	/*		
-	public String getMs_unit() {
-		return ms_unit;
-	}
-	public void setMs_unit(String ms_unit) {
-		this.ms_unit = ms_unit;
-	}
-	*/
+
 	public Double getMs_sigma() {
 		return ms_sigma;
 	}
@@ -721,14 +611,7 @@ public class Body{
 	public void setDiameter_value(Double diameter_value) {
 		this.diameter_value = diameter_value;
 	}
-	/*			
-	public String getDiameter_unit() {
-		return diameter_unit;
-	}
-	public void setDiameter_unit(String diameter_unit) {
-		this.diameter_unit = diameter_unit;
-	}
-	*/
+
 	public Double getDiameter_sigma() {
 		return diameter_sigma;
 	}
@@ -776,14 +659,7 @@ public class Body{
 	public void setExtent_value_h(Double extent_value_h) {
 		this.extent_value_h = extent_value_h;
 	}
-	/*				
-	public String getExtent_unit() {
-		return extent_unit;
-	}
-	public void setExtent_unit(String extent_unit) {
-		this.extent_unit = extent_unit;
-	}
-	*/
+
 	public Double getExtent_sigma() {
 		return extent_sigma;
 	}
@@ -819,14 +695,7 @@ public class Body{
 	public void setGm_value(Double gm_value) {
 		this.gm_value = gm_value;
 	}
-	/*			
-	public String getGm_unit() {
-		return gm_unit;
-	}
-	public void setGm_unit(String gm_unit) {
-		this.gm_unit = gm_unit;
-	}
-	*/
+
 	public Double getGm_sigma() {
 		return gm_sigma;
 	}
@@ -861,14 +730,7 @@ public class Body{
 	public void setBd_value(Double bd_value) {
 		this.bd_value = bd_value;
 	}
-	/*
-	public String getBd_unit() {
-		return bd_unit;
-	}
-	public void setBd_unit(String bd_unit) {
-		this.bd_unit = bd_unit;
-	}
-	*/
+
 	public Double getBd_sigma() {
 		return bd_sigma;
 	}
@@ -901,14 +763,7 @@ public class Body{
 	public void setRp_value(Double rp_value) {
 		this.rp_value = rp_value;
 	}
-	/*
-	public String getRp_unit() {
-		return rp_unit;
-	}
-	public void setRp_unit(String rp_unit) {
-		this.rp_unit = rp_unit;
-	}
-	*/
+
 	public Double getRp_sigma() {
 		return rp_sigma;
 	}
@@ -941,14 +796,7 @@ public class Body{
 	public void setGa_value(Double ga_value) {
 		this.ga_value = ga_value;
 	}
-	/*
-	public String getGa_unit() {
-		return ga_unit;
-	}
-	public void setGa_unit(String ga_unit) {
-		this.ga_unit = ga_unit;
-	}
-	*/
+
 	public Double getGa_sigma() {
 		return ga_sigma;
 	}
@@ -981,14 +829,7 @@ public class Body{
 	public void setBv_value(Double bv_value) {
 		this.bv_value = bv_value;
 	}
-	/*
-	public String getBv_unit() {
-		return bv_unit;
-	}
-	public void setBv_unit(String bv_unit) {
-		this.bv_unit = bv_unit;
-	}
-	*/
+
 	public Double getBv_sigma() {
 		return bv_sigma;
 	}
@@ -1021,14 +862,7 @@ public class Body{
 	public void setUb_value(Double ub_value) {
 		this.ub_value = ub_value;
 	}
-	/*
-	public String getUb_unit() {
-		return ub_unit;
-	}
-	public void setUb_unit(String ub_unit) {
-		this.ub_unit = ub_unit;
-	}
-	*/
+
 	public Double getUb_sigma() {
 		return ub_sigma;
 	}
@@ -1061,14 +895,7 @@ public class Body{
 	public void setTst_value(String tst_value) {
 		this.tst_value = tst_value;
 	}
-	/*
-	public String getTst_unit() {
-		return tst_unit;
-	}
-	public void setTst_unit(String tst_unit) {
-		this.tst_unit = tst_unit;
-	}
-	*/
+
 	public Double getTst_sigma() {
 		return tst_sigma;
 	}
@@ -1101,14 +928,7 @@ public class Body{
 	public void setSst_value(String sst_value) {
 		this.sst_value = sst_value;
 	}
-	/*
-	public String getSst_unit() {
-		return sst_unit;
-	}
-	public void setSst_unit(String sst_unit) {
-		this.sst_unit = sst_unit;
-	}
-	*/
+
 	public Double getSst_sigma() {
 		return sst_sigma;
 	}
@@ -1302,74 +1122,6 @@ public class Body{
 		}
 		return oe;
 	}
-	//set Orbital Element
-	/*
-	public void setOE (OrbitalElement oe) {
-		switch(oe.getElement()) {
-		case Element.E:
-			this.oe_e_v = oe.getValue();
-			this.oe_e_unc = oe.getUncertainly();
-			this.oe_e_unit = oe.getUnit();
-		break;
-		case Element.A:
-			this.oe_a_v = oe.getValue();
-			this.oe_a_unc = oe.getUncertainly();
-			this.oe_a_unit = oe.getUnit();
-		break;
-		case Element.Q:
-			this.oe_q_v = oe.getValue();
-			this.oe_q_unc = oe.getUncertainly();
-			this.oe_q_unit = oe.getUnit();
-		break;
-		case Element.I:
-			this.oe_i_v = oe.getValue();
-			this.oe_i_unc = oe.getUncertainly();
-			this.oe_i_unit = oe.getUnit();
-		break;
-		case Element.NODE:
-			this.oe_node_v = oe.getValue();
-			this.oe_node_unc = oe.getUncertainly();
-			this.oe_node_unit = oe.getUnit();
-		break;
-		case Element.PERI:
-			this.oe_peri_v = oe.getValue();
-			this.oe_peri_unc = oe.getUncertainly();
-			this.oe_peri_unit = oe.getUnit();
-		break;
-		case Element.MUPPER:
-			this.oe_mUpper_v = oe.getValue();
-			this.oe_mUpper_unc = oe.getUncertainly();
-			this.oe_mUpper_unit = oe.getUnit();
-		break;
-		case Element.TP:
-			this.oe_tp_v = oe.getValue();
-			this.oe_tp_unc = oe.getUncertainly();
-			this.oe_tp_unit = oe.getUnit();
-		break;
-		case Element.PERIODBYDAY:
-			this.oe_periodByDay_v = oe.getValue();
-			this.oe_periodByDay_unc = oe.getUncertainly();
-			this.oe_periodByDay_unit = oe.getUnit();
-		break;
-		case Element.PERIODBYYR:
-			this.oe_periodByYr_v = oe.getValue();
-			this.oe_periodByYr_unc = oe.getUncertainly();
-			this.oe_periodByYr_unit = oe.getUnit();
-		break;
-		case Element.N:
-			this.oe_n_v = oe.getValue();
-			this.oe_n_unc = oe.getUncertainly();
-			this.oe_n_unit = oe.getUnit();
-		break;
-		case Element.QUPPER:
-			this.oe_qUpper_v = oe.getValue();
-			this.oe_qUpper_unc = oe.getUncertainly();
-			this.oe_qUpper_unit = oe.getUnit();
-		break;
-		default:
-		}
-	}
-	*/
 	
 	//get Physical Parameter
 	public PhysicalParameter getPP (int parameter) {
@@ -1488,112 +1240,5 @@ public class Body{
 		}
 		return pp;
 	}
-	//set Physical Parameter
-	/*
-	public void setPP (PhysicalParameter pp) {
-		switch(pp.getParameter()) {
-		case Parameter.AM:
-			this.am_symbol = pp.getSymbol();
-			this.am_value = new Double(pp.getValue());
-			this.am_unit = pp.getUnit();
-			this.am_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.am_reference = pp.getReference();
-			this.am_note = pp.getNote();
-		break;
-		case Parameter.MS:
-			this.ms_symbol = pp.getSymbol();
-			this.ms_value = new Double(pp.getValue());
-			this.ms_unit = pp.getUnit();
-			this.ms_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.ms_reference = pp.getReference();
-			this.ms_note = pp.getNote();
-		break;
-		case Parameter.DIAMETER:
-			this.diameter_symbol = pp.getSymbol();
-			this.diameter_value = new Double(pp.getValue());
-			this.diameter_unit = pp.getUnit();
-			this.diameter_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.diameter_reference = pp.getReference();
-			this.diameter_note = pp.getNote();
-		break;
-		case Parameter.EXTENT:
-			this.extent_symbol = pp.getSymbol();
-			String[] tempString = pp.getValue().split("\\*");
-			this.extent_value_l = new Double(tempString[0]);
-			this.extent_value_w = new Double(tempString[1]);
-			this.extent_value_h = new Double(tempString[2]);
-			this.extent_unit = pp.getUnit();
-			this.extent_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.extent_reference = pp.getReference();
-			this.extent_note = pp.getNote();
-		break;
-		case Parameter.GM:
-			this.gm_symbol = pp.getSymbol();
-			this.gm_value = new Double(pp.getValue());
-			this.gm_unit = pp.getUnit();
-			this.gm_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.gm_reference = pp.getReference();
-			this.gm_note = pp.getNote();
-		break;
-		case Parameter.B_DENSITY:
-			this.bd_symbol = pp.getSymbol();
-			this.bd_value = new Double(pp.getValue());
-			this.bd_unit = pp.getUnit();
-			this.bd_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.bd_reference = pp.getReference();
-			this.bd_note = pp.getNote();
-		break;
-		case Parameter.R_PERIOD:
-			this.rp_symbol = pp.getSymbol();
-			this.rp_value = new Double(pp.getValue());
-			this.rp_unit = pp.getUnit();
-			this.rp_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.rp_reference = pp.getReference();
-			this.rp_note = pp.getNote();
-		break;
-		case Parameter.GA:
-			this.ga_symbol = pp.getSymbol();
-			this.ga_value = new Double(pp.getValue());
-			this.ga_unit = pp.getUnit();
-			this.ga_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.ga_reference = pp.getReference();
-			this.ga_note = pp.getNote();
-		break;
-		case Parameter.B_V:
-			this.bv_symbol = pp.getSymbol();
-			this.bv_value = new Double(pp.getValue());
-			this.bv_unit = pp.getUnit();
-			this.bv_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.bv_reference = pp.getReference();
-			this.bv_note = pp.getNote();
-		break;
-		case Parameter.U_B:
-			this.ub_symbol = pp.getSymbol();
-			this.ub_value = new Double(pp.getValue());
-			this.ub_unit = pp.getUnit();
-			this.ub_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.ub_reference = pp.getReference();
-			this.ub_note = pp.getNote();
-		break;
-		case Parameter.TST:
-			this.tst_symbol = pp.getSymbol();
-			this.tst_value = pp.getValue();
-			this.tst_unit = pp.getUnit();
-			this.tst_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.tst_reference = pp.getReference();
-			this.tst_note = pp.getNote();
-		break;
-		case Parameter.SST:
-			this.sst_symbol = pp.getSymbol();
-			this.sst_value = pp.getValue();
-			this.sst_unit = pp.getUnit();
-			this.sst_sigma = pp.getSigma()=="n/a"?-1:new Double(pp.getSigma());
-			this.sst_reference = pp.getReference();
-			this.sst_note = pp.getNote();
-		break;
-		default:
-		}
-	}
-	*/
 	
 }
